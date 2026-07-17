@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="计算巢是阿里云开放给企业应用服务商的服务管理平台。服务商能够在计算巢上发布私有化部署服务，为其客户提供云上软件一键部署的能力；同时也支持全托管模式的服务，赋能服务商托管其客户资源。">
+  <title>Home - Aliyun 计算巢 x Demo</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+
+  
+
+  
+  
+
+  
+    <script src="search/main.js"></script>
+  
+
+  
+
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <img src="./img/logo-2x.png">
+        </div>
+        <div class="nav-list">
+          <ul>
+          
+              <li><a href="#opencode">OpenCode 简介</a></li>
+              
+                  <li><a href="#_1">核心特性</a></li>
+                  
+              
+          
+              <li><a href="#_2">部署流程</a></li>
+              
+          
+              <li><a href="#_3">使用指南</a></li>
+              
+                  <li><a href="#_4">使用须知</a></li>
+                  
+              
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content theme-github">
+      
+      <div class="content-inner">        
+        
+        <h2 id="opencode">OpenCode 简介</h2>
+<p>OpenCode 是一个开源的、运行在终端中的 AI 编程智能体（Agentic Coding Tool）。它能够理解整个代码库的上下文，通过自然语言交互帮助开发者完成代码编写、调试、重构、测试等任务。OpenCode 直接集成到终端工作流中，同时提供桌面应用和 IDE 扩展等多种使用方式，开箱即用。本服务在阿里云 ECS 上一键部署 OpenCode 运行环境，并自动对接阿里云百炼（DashScope）大模型。</p>
+<h3 id="_1">核心特性</h3>
+<ul>
+<li><strong>全代码库理解</strong> — 自动索引和理解整个项目结构，无需手动指定上下文</li>
+<li><strong>多文件编辑</strong> — 一次对话中可同时创建、修改多个文件，完成跨模块重构</li>
+<li><strong>终端命令执行</strong> — 直接运行 Shell 命令、安装依赖、执行测试，反馈结果并自动修复</li>
+<li><strong>多种使用方式</strong> — 支持终端界面、桌面应用与 IDE 扩展，适配不同工作流</li>
+<li><strong>模型自由接入</strong> — 兼容多家模型服务，本服务默认对接阿里云百炼（DashScope）</li>
+<li><strong>扩展工具支持</strong> — 支持 MCP 协议接入外部工具和数据源，扩展能力边界</li>
+<li><strong>会话记忆</strong> — 支持上下文延续，长时间复杂任务可分步完成</li>
+<li><strong>多语言支持</strong> — 覆盖 Python、JavaScript/TypeScript、Go、Rust、Java 等主流编程语言</li>
+</ul>
+<h2 id="_2">部署流程</h2>
+<ol>
+<li>
+<p>单击<a href="https://computenest.console.aliyun.com/service/instance/create/cn-hangzhou?type=user&amp;ServiceId=service-37d1aafd6c444cdd8440">部署链接</a>，进入服务实例部署界面，根据界面提示填写参数（包括实例规格、实例密码以及百炼 API-KEY），可以看到对应询价明细，确认参数后点击<strong>下一步：确认订单</strong>。</p>
+<p><img alt="deploy.png" src="1.jpg" /></p>
+</li>
+<li>
+<p>确认订单完成后同意服务协议并点击<strong>立即创建</strong>。</p>
+</li>
+<li>
+<p>等待部署完成后远程连接服务器。
+    <img alt="result.png" src="2.jpg" /></p>
+</li>
+<li>
+<p>连接后执行以下命令启动 OpenCode：
+    <code>shell
+    sudo su root
+    cd /root
+    opencode</code></p>
+</li>
+</ol>
+<p>然后执行 /Connect 配置APIkey以及模型。</p>
+<pre><code>![result.png](3.jpg)
+</code></pre>
+<h2 id="_3">使用指南</h2>
+<p>请查看<a href="https://opencode.ai/docs/">官方文档</a></p>
+<h3 id="_4">使用须知</h3>
+<ul>
+<li>本工具为第三方开源项目，阿里云仅提供云资源和部署入口支持，不对工具自身功能、生成内容、执行结果、服务可用性及额外费用承担责任。</li>
+</ul>
+        
+      </div>
+
+      <div class="copyrights">© 2009-2022 Aliyun.com 版权所有</div>
+    </div>
+  </div>
+  
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-07-17 06:54:32.186328+00:00
+  -->
+</body>
+</html>
