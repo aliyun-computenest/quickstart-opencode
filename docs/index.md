@@ -32,7 +32,7 @@ OpenCode 是一个开源的、运行在终端中的 AI 编程智能体（Agentic
     opencode
     ```
    
-   然后执行 /Connec 配置APIkey以及模型。
+   然后执行 /Connect 配置APIkey以及模型。
 
     ![result.png](3.jpg)
 
